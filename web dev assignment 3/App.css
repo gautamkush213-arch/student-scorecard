@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 24px 40px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.header p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+
+/* Main Layout */
+.app-wrapper {
+  min-height: 100vh;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Table Section */
+.table-section h2,
+.form-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #2c3e50;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.student-table thead {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.student-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.student-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eef0f3;
+  font-size: 0.95rem;
+}
+
+.student-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Pass / Fail Badge */
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.status-badge.pass {
+  background-color: #d4edda;
+  color: #1e7e34;
+}
+
+.status-badge.fail {
+  background-color: #f8d7da;
+  color: #c0392b;
+}
+
+/* Update cell */
+.update-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.score-input {
+  width: 90px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.score-input:focus {
+  border-color: #3498db;
+}
+
+/* Buttons */
+.btn {
+  padding: 7px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-update {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-update:hover {
+  background-color: #2980b9;
+}
+
+.btn-add {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.btn-add:hover {
+  background-color: #219150;
+}
+
+/* Add Student Form */
+.form-section {
+  background-color: white;
+  padding: 28px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  max-width: 400px;
+}
+
+.form-input:focus {
+  border-color: #27ae60;
+}
